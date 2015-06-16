@@ -1,4 +1,4 @@
-package io;
+package io.byteflow.input;
 
 import java.io.File;
 import java.io.FileInputStream;
