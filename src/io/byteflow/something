@@ -1,0 +1,12 @@
+字节输入流
+ByteArrayInputStream//需要提供一个byte[]的参数作为数据缓存
+FileInputStream//提供一个文件作为输入缓存
+ObjectInputStream//需要提供一个InputStream的实现作为数据缓存，内部会将这个输入流再封装成BlockDataInputStream进行操作
+DataInputStream//需要提供一个InputStream的实现作为数据缓存
+
+
+字节输出流
+ByteArrayOutputStream//内部提供了一个byte[]类型的变量用于输出
+FileOutputStream//提供一个文件作为输出
+ObjectOutputStream//需要提供一个OutputStream的实现作为输出
+DataOutputStream//需要提供一个OutputStream的实现作为输出
