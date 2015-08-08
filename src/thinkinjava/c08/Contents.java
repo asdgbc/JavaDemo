@@ -1,0 +1,5 @@
+package thinkinjava.c08;
+
+public interface Contents {
+	int value();
+}
