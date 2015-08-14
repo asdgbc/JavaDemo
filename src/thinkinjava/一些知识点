@@ -1,8 +1,14 @@
 
+
+
 Chapter.8
 1、普通的(非内部类)类，不能声明为private或protected；它们只可以被赋予public或者包访问权。
 2、当某个外围类的对象创建了一个内部类对象时，此内部类对象必定会保存一个纸箱那个外围类对象的引用。（除了静态内部类（也被称为嵌套类））
 3、非静态内部类是无法拥有static属性和方法的，也不能包含嵌套类，但是嵌套类可以包含所有这些东西。
+
+
+Chapter.9
+1、RuntimeException也被称为"未被检查的异常"(unchecked exception)。无需在方法末端现实声明throws
 
 
 Chapter.13
