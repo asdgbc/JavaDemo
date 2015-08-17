@@ -10,6 +10,15 @@ Chapter.8
 Chapter.9
 1、RuntimeException也被称为"未被检查的异常"(unchecked exception)。无需在方法末端现实声明throws
 
+Chapter.10
+1、作为程序一部分，每个类都有一个Class对象。换言之，每当你编写并编译了一个雷，就会生成一个Class类对象(更恰当地说，是被保存在一个同名的.class文件中)。
+	在运行期，一旦我们想生成这个类的一个对象，运行这个程序的Java虚拟机(JVM)首先会检查这个类的Class对象是否已经加载。如果尚未加载，JVM就会根据类名查
+	找.class文件，并将其载入。一旦某个类的Class对象被载入内存，它就被用来创建这个类的所有对象。
+2、几种RTTI形式：
+	1.经典的类型转换，如"(Shape)",由RTTI确保类型转换的正确性，如果你执行了一个错误的类型转，就会抛出一个ClassCastException异常。
+	2.代表对象类型的Class对象。通过查询Class对象可以获取运行期所需的信息。
+	3.使用关键字instanceof
+3、对instanceof有比较严格的限制：你只可将其与类型的名字进行比较，而不能与Class对象作比较。
 
 Chapter.13
 1、volatile关键字：每个线程都可能拥有一个本地栈以维护一些变量的副本。如果把一个变量定义为volatile，就等于告诉编译器不要做任何优化，
