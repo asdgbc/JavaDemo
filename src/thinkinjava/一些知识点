@@ -1,4 +1,4 @@
-
+程序设计的基本目标是：将保持不变的事物与会发生改变的事物相分离。
 
 
 Chapter.8
@@ -19,6 +19,14 @@ Chapter.10
 	2.代表对象类型的Class对象。通过查询Class对象可以获取运行期所需的信息。
 	3.使用关键字instanceof
 3、对instanceof有比较严格的限制：你只可将其与类型的名字进行比较，而不能与Class对象作比较。
+
+Chapter.11
+1、Iterator的位置可以理解为在两个元素的中间，通过it.next()或者it.previous()来获取元素
+ListIterator中的add和remove方法其实并不会移动ListIterator，比如add之后需要通过调用previous来获得新加的那个元素，
+remove之后通过调用next才能获得重新排列后相同位置的下一个元素
+2.ArrayList中的addAll采用了深度复制，并不仅仅是增加引用。
+3、使用散列的目的在于：想要使用一个对象来查找另一个对象。
+
 
 Chapter.13
 1、volatile关键字：每个线程都可能拥有一个本地栈以维护一些变量的副本。如果把一个变量定义为volatile，就等于告诉编译器不要做任何优化，

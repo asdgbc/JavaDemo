@@ -1,0 +1,13 @@
+package thinkinjava.c11;
+
+public class Dog {
+	private int dogNumber;
+
+	public Dog(int i) {
+		dogNumber = i;
+	}
+
+	private void id() {
+		System.out.println("Dog #" + dogNumber);
+	}
+}
